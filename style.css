@@ -20,21 +20,28 @@ body{
     flex: 1 0 25%; 
     margin: 0% 2.5%;
 }
-.column1 a{
+.column1 .github{
     font-size: 1.5rem;
     padding: 10px;
     text-decoration: none;
-}
-.column1 .github{
     color: blueviolet;
 }
 .column1 .keybase{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
     color: red;
 }
 .column1 .mail{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
     color: blue;
 }
 .column1 .bitcoin{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
     color: orange;
 }
 .column1 .fullname{
