@@ -20,6 +20,10 @@ body{
     flex: 1 0 25%; 
     margin: 0% 2.5%;
 }
+.column1 .fullname{
+    font-size:  3em;
+    margin-bottom: 10px;
+}
 .column1 .github{
     font-size: 1.5rem;
     padding: 10px;
@@ -44,10 +48,6 @@ body{
     text-decoration: none;
     color: orange;
 }
-.column1 .fullname{
-    font-size:  3em;
-    margin-bottom: 10px;
-}
 
 .column2{
     text-align: left;
@@ -58,9 +58,6 @@ body{
     margin-top: 40px;
 }
 .column2 .description{
-    line-height: 25px;
-}
-.column2 li{
     line-height: 25px;
 }
 .column2 a{
