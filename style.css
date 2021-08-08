@@ -23,8 +23,16 @@ body{
 .column1 a{
     font-size: 1.5rem;
     padding: 10px;
-    color: blueviolet;
     text-decoration: none;
+}
+.column1 .github{
+    color: blueviolet;
+}
+.column1 .keybase{
+    color: red;
+}
+.column1 .mail{
+    color: blue;
 }
 .column1 .bitcoin{
     color: orange;
