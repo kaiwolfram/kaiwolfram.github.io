@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 2.5% 2.5% 1% 2.5%;
+}
+
+.column1{
+    text-align: center;
+    flex: 1 0 25%; 
+    margin: 0% 2.5%;
+}
+.column1 a{
+    font-size: 1.5rem;
+    padding: 10px;
+    color: blueviolet;
+    text-decoration: none;
+}
+.column1 .bitcoin{
+    color: orange;
+}
+.column1 .fullname{
+    font-size:  3em;
+    margin-bottom: 10px;
+}
+
+.column2{
+    text-align: left;
+    flex: 1 0 65%;
+    margin: 0% 2.5%;
+}
+.column2 h2{
+    margin-top: 40px;
+}
+.column2 .description{
+    line-height: 25px;
+}
+.column2 li{
+    line-height: 25px;
+}
+.column2 a{
+    text-decoration: none;
+    color: blue;
+}
+.column2 .project{
+    text-decoration: none;
+    color: blue;
+    font-size: large;
+    margin-top: 25px;
+}
