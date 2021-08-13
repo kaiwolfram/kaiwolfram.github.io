@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2.5% ;
+}
+
+.box1{
+    text-align: center;
+    margin-bottom: 2.5%;
+    max-width: 85%;
+    min-width: 350px;
+}
+.box1 .fullname{
+    font-size:  3em;
+    margin-bottom: 10px;
+}
+.box1 .github{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
+    color: blueviolet;
+}
+.box1 .keybase{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
+    color: red;
+}
+.box1 .mail{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
+    color: blue;
+}
+.box1 .bitcoin{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
+    color: orange;
+}
+
+.box2{
+    text-align: left;
+    max-width: 85%;
+    min-width: 350px;
+}
+.box2 h2{
+    margin-top: 40px;
+}
+.box2 .description{
+    line-height: 25px;
+}
+.box2 a{
+    text-decoration: none;
+    color: blue;
+}
+.box2 .project{
+    text-decoration: none;
+    color: blue;
+    font-size: large;
+    margin-top: 25px;
+}

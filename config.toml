@@ -1,0 +1,28 @@
+base_url = "https://kaiwolfram.com"
+
+title = "Kai Wolfram"
+description = "Backend developer with an interest in Bitcoin🌽, Lightning⚡ and freedom🗽"
+
+[extra.about]
+socials = [
+    {name = "github",   fa = "fab fa-github",           link = "https://github.com/KaiWitt"},
+    {name = "keybase",  fa = "fab fa-keybase",          link = "https://keybase.io/kaiwitt"},
+    {name = "mail",     fa = "fas fa-envelope-square",  link = "mailto:kaiwitt@protonmail.com"},
+    {name = "bitcoin",  fa = "fab fa-btc",              link = "bitcoin:bc1qrhxputc6t45w8p2j8k7ke72a9zgqgt3q5gkgat"},
+]
+descriptions = [
+    "📚 My name is Kai and I'm an independent student/observer of the Bitcoin ecosystem and austrian economics. Software development is my current occupation and I'm looking towards contributing to privacy and freedom enhancing tools.",
+    "🦀 In my free coding time I'm mainly doing backend stuff with Rust but Java is my most proficient language as I'm using it in my day job.",
+    "✉️ You can check out my GitHub account to see what I'm up to and contact me via Keybase or email.",
+    "🌍 Currently living in Germany."
+]
+languages = [
+    "🇩🇪 German (native)",
+    "🇺🇸 English (proficient)",
+    "🇲🇽 Spanish (currently working towards proficiency)"
+]
+projects = [
+    {name = "kalayo",       link = "https://github.com/KaiWitt/kalayo",         description = "Webserver with REST API for custodial Bitcoin banking. (Work in progress)"},
+    {name = "xpub-balance", link = "https://github.com/KaiWitt/xpub-balance",   description = "CLI for checking the cumulative balance of xpubs aswell as specified derivated addresses."}
+]
+opensource = "I haven't had the time and resources to start contributing in a more meaningful way, so currently only the german translation of Phoenix Wallet and some minor code reviews for Bisq."

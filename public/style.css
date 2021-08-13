@@ -14,57 +14,57 @@ body{
     margin: 2.5% ;
 }
 
-.column1{
+.box1{
     text-align: center;
     margin-bottom: 2.5%;
     max-width: 85%;
     min-width: 350px;
 }
-.column1 .fullname{
+.box1 .fullname{
     font-size:  3em;
     margin-bottom: 10px;
 }
-.column1 .github{
+.box1 .github{
     font-size: 1.5rem;
     padding: 10px;
     text-decoration: none;
     color: blueviolet;
 }
-.column1 .keybase{
+.box1 .keybase{
     font-size: 1.5rem;
     padding: 10px;
     text-decoration: none;
     color: red;
 }
-.column1 .mail{
+.box1 .mail{
     font-size: 1.5rem;
     padding: 10px;
     text-decoration: none;
     color: blue;
 }
-.column1 .bitcoin{
+.box1 .bitcoin{
     font-size: 1.5rem;
     padding: 10px;
     text-decoration: none;
     color: orange;
 }
 
-.column2{
+.box2{
     text-align: left;
     max-width: 85%;
     min-width: 350px;
 }
-.column2 h2{
+.box2 h2{
     margin-top: 40px;
 }
-.column2 .description{
+.box2 .description{
     line-height: 25px;
 }
-.column2 a{
+.box2 a{
     text-decoration: none;
     color: blue;
 }
-.column2 .project{
+.box2 .project{
     text-decoration: none;
     color: blue;
     font-size: large;
