@@ -25,4 +25,4 @@ projects = [
     {name = "kalayo",       link = "https://github.com/KaiWitt/kalayo",         description = "Webserver with REST API for custodial Bitcoin banking. (Work in progress)"},
     {name = "xpub-balance", link = "https://github.com/KaiWitt/xpub-balance",   description = "CLI for checking the cumulative balance of xpubs aswell as specified derivated addresses."}
 ]
-opensource = "I haven't had the time and resources to start contributing in a more meaningful way, so currently only the german translation of Phoenix Wallet and some minor code reviews for Bisq."
+opensource = []

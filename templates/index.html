@@ -30,9 +30,10 @@
       <p>...</p>
 
       <h2>Open-source contributions</h2>
-      {%- if config.extra.about.opensource -%}
-      <p class="description">{{ config.extra.about.opensource }}</p>
-      {%- endif -%}
+      {% for project in config.extra.about.opensource %}
+      <p class="project"><a href="{{ project.link }}">{{ project.name }}</a></p>
+      <p>{{ project.description }}</p>
+      {% endfor %}
       <p>...</p>
 
     </div>
