@@ -90,33 +90,3 @@ function makeTeaser(body, terms) {
   teaser.push("…");
   return teaser.join("");
 }
-
-$(document).ready(function () {
-  mermaid.initialize({ startOnLoad: true });
-
-  $(".navbar-burger").click(function () {
-    $(".navbar-burger").toggleClass("is-active");
-    $(".navbar-menu").toggleClass("is-active");
-  });
-
-  $('div.navbar-end > .navbar-item').each(function (el) {
-    if (location.href.includes($(this).attr('href'))) {
-      $('a.navbar-item.is-active').removeClass('is-active');
-      $(this).addClass('is-active');
-    }
-  })
-
-  $(".modal-close").click(function () {
-    $("html").removeClass("is-clipped");
-    $(this).parent().removeClass("is-active");
-  });
-
-  $(".modal-background").click(function () {
-    $("html").removeClass("is-clipped");
-    $(this).parent().removeClass("is-active");
-  });
-
-});
-
-
-
