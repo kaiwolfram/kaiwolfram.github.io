@@ -49,14 +49,12 @@
       <div class="navbar-menu" id="navMenu">
         <div class="navbar-end has-text-centered">
           {% for item in config.extra.navbar_items %}
-          {% if lang == item.code %}
           {% for nav in item.nav_items %}
           <a class="navbar-item has-text-weight-semibold"
             href="{{ nav.url | replace(from='$BASE_URL', to=config.base_url) }}">
             {{ nav.name }}
           </a>
           {% endfor %}
-          {% endif %}
           {% endfor %}
         </div>
       </div>

@@ -37,12 +37,22 @@
           </div>
           <div class="content mt-2">
             {{ page.summary | safe }}
-            <a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.permalink }}'>
-              Read More
+            {% if page.extra.repo %}
+            <a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.extra.repo }}'>
+              Repository
               <span class="icon is-small">
                 <i class="fas fa-arrow-right fa-xs"></i>
               </span>
-            </a>
+            </a><br>
+            {% endif %}
+            {% if page.extra.link %}
+            <a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.extra.link }}'>
+              Project link
+              <span class="icon is-small">
+                <i class="fas fa-arrow-right fa-xs"></i>
+              </span>
+            </a><br>
+            {% endif %}
           </div>
           <div class="columns">
             <div class="column">

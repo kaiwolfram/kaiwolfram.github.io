@@ -5,7 +5,6 @@ highlight_code = true
 generate_feed = true
 feed_filename = "rss.xml"
 taxonomies = [
-    { name = "categories", feed = true, paginate_by = 10 },
     { name = "tags", feed = true, paginate_by = 10 },
 ]
 compile_sass = true
@@ -25,7 +24,6 @@ navbar_items = [
         { url = "$BASE_URL/posts", name = "Posts" },
         { url = "$BASE_URL/projects", name = "Projects" },
         { url = "$BASE_URL/opensource", name = "Open-source" },
-        { url = "$BASE_URL/categories", name = "Categories" },
         { url = "$BASE_URL/tags", name = "Tags" },
     ] },
 ]
