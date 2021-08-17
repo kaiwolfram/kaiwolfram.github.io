@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" rel="stylesheet" />
+
+  <title>
+    
+Kai Wolfram | xml-attribute-diff
+
+  </title>
+</head>
+
+<body class="has-background-white">
+  <nav class="breadcrumb is-centered is-medium" aria-label="breadcrumbs">
+    <ul>
+      
+      
+      <li><a href="https:&#x2F;&#x2F;kaiwolfram.com"> Home</a>
+        
+      <li><a href="https:&#x2F;&#x2F;kaiwolfram.com&#x2F;projects"> Projects</a>
+        
+      <li><a href="https:&#x2F;&#x2F;kaiwolfram.com&#x2F;opensource"> Opensource</a>
+        
+      <li><a href="https:&#x2F;&#x2F;kaiwolfram.com&#x2F;blog"> Blog</a>
+        
+      <li><a href="https:&#x2F;&#x2F;kaiwolfram.com&#x2F;tags"> Tags</a>
+        
+        
+    </ul>
+  </nav>
+
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            xml-attribute-diff
+          </h1>
+          <p class="subtitle"></p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+
+
+
+            </div>
+          </div>
+          <div class="content mt-2">
+            <p>Compares all unique attribute values of two xml files. Written to compare strings.xml translation files in Android projects.</p>
+<span id="continue-reading"></span>
+<br>
+<h4 id="description">Description</h4>
+<p>Hierarchy aswell as tag names and texts are ignored, only the values of attributes will be compared.</p>
+<h4 id="usage">Usage</h4>
+<pre><code>xml-attribute-diff 0.1.0
+Compare unique attribute values of two xml files
+
+USAGE:
+    xml-attribute-diff.exe <file1> <file2>
+
+FLAGS:
+    -h, --help       Prints help information
+    -V, --version    Prints version information
+
+ARGS:
+    <file1>    Original xml file, used as a reference for the comparison
+    <file2>    xml file to compare to the original file
+</code></pre>
+<h4 id="example">Example</h4>
+<pre><code>$xml-attribute-diff abc.xml xyz.xml
+file2 has one attribute value more than file1
+file2 has 3 new attribute values:
+        blue
+        red
+        purple
+file2 has 2 missing attribute values:
+        white
+        black
+</code></pre>
+
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+             
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;kaiwolfram.com&#x2F;projects&#x2F;xpub-balance&#x2F;">
+              xpub-balance<span class="icon ml-2">
+                <i class="fas fa-arrow-circle-right"></i>
+              </span>
+            </a>
+          </div>
+          
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+
+</html>
