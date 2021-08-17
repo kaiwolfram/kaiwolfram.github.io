@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Kai Wolfram - example</title>
+        <link>https://kaiwolfram.com</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kaiwolfram.com/tags/example/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>Open-source project A</title>
+            <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+            <link>https://kaiwolfram.com/opensource/post-000/</link>
+            <guid>https://kaiwolfram.com/opensource/post-000/</guid>
+            <description>&lt;p&gt;Here I&#x27;m describing what my contributions consist of and also something about the project itself.&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>First Post</title>
+            <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+            <link>https://kaiwolfram.com/posts/post-000/</link>
+            <guid>https://kaiwolfram.com/posts/post-000/</guid>
+            <description>&lt;p&gt;First post, just an example tho, no real content.&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Example project entry</title>
+            <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+            <link>https://kaiwolfram.com/projects/project-000/</link>
+            <guid>https://kaiwolfram.com/projects/project-000/</guid>
+            <description>&lt;p&gt;A project that is not a real project, just a post in my &lt;code&gt;Projects&lt;&#x2F;code&gt; section&lt;&#x2F;p&gt;
+</description>
+        </item>
+    </channel>
+</rss>
