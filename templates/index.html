@@ -1,42 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<body>
-  <div class="grid">
-    <div class="box1">
-      <h1 class="fullname">{% block title %}{{ config.title }}{% endblock title %}</h1>
-      <p>{% block description %}{{ config.description }}{% endblock description %}</p>
-      {% for social in config.extra.about.socials %}
-      <a class="{{ social.name }}" href="{{ social.link }}"><i class="{{ social.fa }}"></i></a>
-      {% endfor %}
+<section class="section">
+  <div class="container">
+    <div class="has-text-centered">
+      <figure class="image is-flex is-justify-content-center is-align-items-center">
+        <img class="is-rounded" src="{{ config.extra.author.avatar }}" style="max-width: 190px" />
+      </figure>
+      <br>
+      <h1 class="title is-2">{{ section.title }}</h1>
+      <p class="subtitle is-4">{{ section.description }}</p>
+      {% if config.extra.author.avatar %}
+      {% endif %}
+      {{ macros:: social_links( social_config=config.extra.social) }}
     </div>
-    <div class="box2">
-      <h2>About me</h2>
-      {% for sentence in config.extra.about.descriptions %}
-      <p class="description">{{ sentence | safe }}</p>
-      {% endfor %}
-
-      <h2>Spoken Languages</h2>
-      {% for lang in config.extra.about.languages %}
-      <p>{{ lang }}</p>
-      {% endfor %}
-
-      <h2>Personal projects</h2>
-      {% for project in config.extra.about.projects %}
-      <p class="project"><a href="{{ project.link }}">{{ project.name }}</a></p>
-      <p>{{ project.description }}</p>
-      {% endfor %}
-      <p>...</p>
-
-      <h2>Open-source contributions</h2>
-      {% for project in config.extra.about.opensource %}
-      <p class="project"><a href="{{ project.link }}">{{ project.name }}</a></p>
-      <p>{{ project.description }}</p>
-      {% endfor %}
-      <p>...</p>
-
+    <div class="content">
+      {{ section.content | safe }}
     </div>
   </div>
-</body>
-{% endblock content %}
+</section>
+{% endblock %}
