@@ -31,42 +31,58 @@
 {% endblock %}
 
 {% block pagination %}
-{% if page.earlier or page.later or page.lighter or page.heavier %}
+{% if page.lighter or page.heavier %}
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <nav class="level">
-          {% if page.later %}
+          {% if page.lighter %}
           <div class="level-item has-text-centered">
-            <a class="button is-black is-outlined" href="{{ page.later.permalink }}">
+            <a class="button is-black is-outlined" href="{{ page.lighter.permalink }}">
               <span class="icon mr-2">
                 <i class="fas fa-arrow-circle-left"></i>
               </span>
-              {{ page.later.title }}
+              {{ page.lighter.title }}
             </a>
           </div>
-          {% endif %} {% if page.earlier %}
+          {% endif %}
+          {% if page.heavier %}
           <div class="level-item has-text-centered">
-            <a class="button is-black is-outlined" href="{{ page.earlier.permalink }}">
-              {{ page.earlier.title }}<span class="icon ml-2">
+            <a class="button is-black is-outlined" href="{{ page.heavier.permalink }}">
+              {{ page.heavier.title }}
+              <span class="icon ml-2">
                 <i class="fas fa-arrow-circle-right"></i>
               </span>
             </a>
           </div>
-          {% endif %} {% if page.heavier %}
+          {% endif %}
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+{% elif page.earlier or page.later %}
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+          {% if page.earlier %}
           <div class="level-item has-text-centered">
-            <a class="button is-black is-outlined" href="{{ page.heavier.permalink }}">
-              <span class="icon mr-2">
+            <a class="button is-black is-outlined" href="{{ page.earlier.permalink }}">
+              <span class="icon ml-2">
                 <i class="fas fa-arrow-circle-left"></i>
+                {{ page.earlier.title }}
               </span>
-              {{ page.heavier.title }}
             </a>
           </div>
-          {% endif %} {% if page.lighter %}
+          {% endif %}
+          {% if page.later %}
           <div class="level-item has-text-centered">
-            <a class="button is-black is-outlined" href="{{ page.lighter.permalink }}">
-              {{ page.lighter.title }}<span class="icon ml-2">
+            <a class="button is-black is-outlined" href="{{ page.later.permalink }}">
+              {{ page.later.title }}
+              <span class="icon mr-2">
                 <i class="fas fa-arrow-circle-right"></i>
               </span>
             </a>

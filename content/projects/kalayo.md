@@ -1,5 +1,6 @@
 +++
-title = "kalayo"
+title = "kalayo (Work in progress)"
+description = ""
 weight = 1
 
 [taxonomies]
@@ -11,7 +12,7 @@ repo = "https://github.com/KaiWitt/kalayo"
 link = ""
 +++
 
-Webserver with REST API for custodial Bitcoin banking. (Work in progress)
+Webserver with REST API for custodial Bitcoin banking.
 
 
 <!-- more -->

@@ -1,5 +1,6 @@
 +++
 title = "http-auth-basic"
+description = ""
 weight = 10
 
 [taxonomies]
