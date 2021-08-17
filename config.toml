@@ -8,7 +8,7 @@ taxonomies = [
     { name = "tags", feed = true, paginate_by = 10 },
 ]
 compile_sass = true
-build_search_index = true
+build_search_index = false
 ignored_content = []
 extra_syntaxes = []
 

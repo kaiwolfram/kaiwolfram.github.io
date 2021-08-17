@@ -1,10 +1,9 @@
 +++
 title = "xpub-balance"
-date = 2021-05-10
-weight = 10
+weight = 8
 
 [taxonomies]
-tags = ["rust", "cli", "bitcoin"]
+tags = ["rust", "bitcoin", "cli"]
 
 [extra]
 project = true
@@ -15,17 +14,15 @@ link = ""
 CLI for checking the cumulative balance of xpubs aswell as for each derivated address.
 
 <!-- more -->
+<br>
 
-
-Description
-------------
+#### Description
 
 Checks the balance of an xpub and its addresses, uses Esplora to collect address information.
 
 Also works with the other extended public key types (ypub and zpub)
 
-Usage
-------------
+#### Usage
 ```
 xpub-balance 0.1.0
 Checks the balance of an xpub and its addresses
@@ -40,9 +37,8 @@ FLAGS:
     -V, --version    Prints version information
 
 OPTIONS:
-    -e, --esplora <esplora>    Use a specific Esplora URL [default: https://blockstream.info/api/]
-    -n <n>                     Total number of indexes to check. Each index has two addresses: a receive and a change
-                               address. Relevant for the total balance calculation [default: 100]
+    -e, --esplora <esplora>     Use a specific Esplora URL [default: https://blockstream.info/api/]
+    -n <n>                      Total number of indexes to check. Each index has two addresses: a receive and a change address Relevant for the total balance calculation [default: 100]
 
 ARGS:
     <xpub>     Extended public key of your wallet account. Either xpub, ypub or zpub
@@ -50,11 +46,9 @@ ARGS:
     <end>      Last index to print [default: 15]
 ```
 
-Example
-------------
+#### Example
 ```
-$xpub-balance xpub6BosfCnifzxcFwrSzQiqu2DBVTshkCXacvNsWGYJVVhhawA7d4R5WSWGFNbi8Aw6ZRc1brx
-MyWMzG3DSSSSoekkudhUd9yLb6qx39T9nMdj  0 10
+$xpub-balance xpub6BosfCnifzxcFwrSzQiqu2DBVTshkCXacvNsWGYJVVhhawA7d4R5WSWGFNbi8Aw6ZRc1brxMyWMzG3DSSSSoekkudhUd9yLb6qx39T9nMdj  0 10
 
 0/0   1LqBGSKuX5yYUonjxT5qGfpUsXKYYWeabA    0 sat  12 txs
 0/1   1Ak8PffB2meyfYnbXZR9EGfLfFZVpzJvQP    0 sat  4 txs 

@@ -1,10 +1,9 @@
 +++
 title = "kalayo"
-date = 2021-08-17
 weight = 1
 
 [taxonomies]
-tags = ["rust", "bitcoin", "api", "rest"]
+tags = ["rust", "bitcoin", "lightning", "mysql", "redis", "api", "rest"]
 
 [extra]
 project = true
@@ -15,9 +14,8 @@ link = ""
 Webserver with REST API for custodial Bitcoin banking. (Work in progress)
 
 <!-- more -->
+<br>
 
-
-Description
-------------
+#### Description
 
 Custodial Bitcoin banking with federated cold wallet and c-lightning integration.
