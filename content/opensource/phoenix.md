@@ -11,9 +11,10 @@ repo = "https://github.com/ACINQ/phoenix"
 link = ""
 +++
 
-Non custodial Bitcoin wallet using Lightning to send/receive payments and developed by ACINQ.
+Non custodial Bitcoin wallet using Lightning to send/receive payments.
 
-**Contributions:** German translation of the app
+**Contributions:** German translation of the app.
+
 
 <!-- more -->
 <br>

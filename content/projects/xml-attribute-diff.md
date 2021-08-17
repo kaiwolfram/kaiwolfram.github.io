@@ -13,6 +13,7 @@ link = ""
 
 Compares all unique attribute values of two xml files. Written to compare strings.xml translation files in Android projects.
 
+
 <!-- more -->
 <br>
 

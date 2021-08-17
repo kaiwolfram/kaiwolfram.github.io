@@ -13,7 +13,8 @@ link = ""
 
 A library for the HTTP Basic Auth schema.
 
-**Contributions:** Efficiency improvements, tests and standard trait implementation
+**Contributions:** Efficiency improvements, tests and standard trait implementation.
+
 
 <!-- more -->
 <br>
