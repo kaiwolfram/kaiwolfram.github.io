@@ -37,26 +37,30 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <nav class="level">
-          {% if page.heavier %}
-          <div class="level-item has-text-centered">
-            <a class="button is-black is-outlined" href="{{ page.heavier.permalink }}">
-              <span class="icon mr-2">
-                <i class="fas fa-arrow-circle-left"></i>
-              </span>
-              {{ page.heavier.title }}
-            </a>
-          </div>
-          {% endif %}
-          {% if page.lighter %}
-          <div class="level-item has-text-centered">
-            <a class="button is-black is-outlined" href="{{ page.lighter.permalink }}">
-              {{ page.lighter.title }}
-              <span class="icon ml-2">
-                <i class="fas fa-arrow-circle-right"></i>
-              </span>
-            </a>
-          </div>
-          {% endif %}
+          <nav class="level-left">
+            {% if page.lighter %}
+            <div class="level-item has-text-centered">
+              <a class="button is-black is-outlined is-rounded" href="{{ page.lighter.permalink }}">
+                <span class="icon mr-2">
+                  <i class="fas fa-arrow-circle-left"></i>
+                </span>
+                {{ page.lighter.title }}
+              </a>
+            </div>
+            {% endif %}
+          </nav>
+          <nav class="level-right">
+            {% if page.heavier %}
+            <div class="level-item has-text-centered">
+              <a class="button is-black is-outlined is-rounded" href="{{ page.heavier.permalink }}">
+                {{ page.heavier.title }}
+                <span class="icon ml-2">
+                  <i class="fas fa-arrow-circle-right"></i>
+                </span>
+              </a>
+            </div>
+            {% endif %}
+          </nav>
         </nav>
       </div>
     </div>
