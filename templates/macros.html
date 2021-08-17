@@ -43,12 +43,15 @@
 {% endmacro %}
 
 {% macro page_publish_metadata(page) %}
+{% if page.extra.project %}
+{% else %}
 <span class="icon-text has-text-grey">
   <span class="icon">
     <i class="far fa-calendar-alt"></i>
   </span>
   <span><time datetime="{{ page.date }}">{{ page.date | date(format='%Y-%m-%d') }}</time></span>
 </span>
+{% endif %}
 {% endmacro %}
 
 {% macro render_categories(categories) %}

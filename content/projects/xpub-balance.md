@@ -7,6 +7,7 @@ weight = 10
 tags = ["rust", "cli", "bitcoin"]
 
 [extra]
+project = true
 repo = "https://github.com/KaiWitt/xpub-balance"
 link = ""
 +++

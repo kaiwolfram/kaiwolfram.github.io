@@ -7,6 +7,7 @@ weight = 1
 tags = ["rust", "bitcoin", "api", "rest"]
 
 [extra]
+project = true
 repo = "https://github.com/KaiWitt/kalayo"
 link = ""
 +++
