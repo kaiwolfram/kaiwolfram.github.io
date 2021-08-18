@@ -22,6 +22,11 @@
           <div class="content mt-2">
             {{ page.content | safe }}
           </div>
+          <div class="column has-text-right-desktop">
+            {% if page.taxonomies.tags %}
+            {{ macros::render_tags(tags=page.taxonomies.tags) }}
+            {% endif %}
+          </div>
         </article>
       </div>
 
