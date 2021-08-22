@@ -14,6 +14,7 @@ link = ""
 
 Kalayo is an async webserver with a REST API for custodial Bitcoin banking whose cold wallet is managed by a multisig scheme. It allows customers to transact with other kalayo users free of charge, batch on-chain transactions with other users to save network fees and send and receive payments over the Lightning network without managing channels. It can also be used as a custodial coin mixer and liquidity provider for the Lightning network.
 
+<!-- more -->
 
 ## Roadmap
 This project is still work in progress. The following list shows the current implemented features and those that are soon to be worked on.
