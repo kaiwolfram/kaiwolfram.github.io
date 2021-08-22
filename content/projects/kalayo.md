@@ -37,7 +37,7 @@ Kalayo is developed with Rust 1.54.0, Bitcoin Core 0.21.0, MySQL and the up to d
 ## Kalayo HTTP API
 Current implemented API endpoints.
 Endpoints that are marked with `$` require user authentication by using the HTTP Basic Auth scheme. 
-Username is the signing address of the user and the password is a signed token. How to get signable tokens is described below in the token resource.
+A User's signing address is the basic auth username and the password is a signed token. How to get signable tokens is described below in the token resource. 
 
 
 ### Users
@@ -98,7 +98,8 @@ Deletes a user if you can proof ownership of `:address`.
 
 ### Tokens
 #### `GET v1/token/:address`
-Returns the current token of `:address`.
+Returns the current token of `:address`. 
+Tokens can only be used for a single authentification process and you need to request a new one if you want to make another API call.
 ```json
 Example response:
 {
