@@ -71,7 +71,6 @@ Kai Wolfram | kalayo (Work in progress)
           </div>
           <div class="content mt-2">
             <p>Kalayo is an async webserver with a REST API for custodial Bitcoin banking whose cold wallet is managed by a multisig scheme. It allows customers to transact with other kalayo users free of charge, batch on-chain transactions with other users to save network fees and send and receive payments over the Lightning network without managing channels. It can also be used as a custodial coin mixer and liquidity provider for the Lightning network.</p>
-<span id="continue-reading"></span>
 <h2 id="roadmap">Roadmap</h2>
 <p>This project is still work in progress. The following list shows the current implemented features and those that are soon to be worked on.</p>
 <ul>
@@ -94,70 +93,12 @@ Lightning network liquidity vendor</li>
 <li><input disabled="" type="checkbox"/>
 Automated Lightning network channel management</li>
 </ul>
+<h2 id="rest-api">REST API</h2>
+<p>You can find the documentation of the current state of Kalayo's REST API in the <a href="https://github.com/KaiWitt/kalayo/tree/master/src/api">api module</a>.</p>
 <h2 id="privacy">Privacy</h2>
 <p>Kalayo doesn't know anything about its customers except their transactions and a Bitcoin address which is used for signing. User authentication is handled by signing tokens with said Bitcoin address, which means that losing its private key results in losing the control of your Kalayo account.</p>
 <h2 id="requirements">Requirements</h2>
 <p>Kalayo is developed with Rust 1.54.0, Bitcoin Core 0.21.0, MySQL and the up to date version of c-lightning. To run the server you need to configure the <a href="https://github.com/KaiWitt/kalayo/blob/master/config.toml">config.toml</a> with your desired settings.</p>
-<h2 id="kalayo-http-api">Kalayo HTTP API</h2>
-<p>Current implemented API endpoints.
-Endpoints that are marked with <code>$</code> require user authentication by using the HTTP Basic Auth scheme. 
-Username is the signing address of the user and the password is a signed token. How to get signable tokens is described below in the token resource.</p>
-<h3 id="users">Users</h3>
-<h4 id="get-v1-user-address"><code>GET v1/user/:address $</code></h4>
-<p>Returns a user object if you can proof ownership of <code>:address</code>.</p>
-<pre data-lang="json" class="language-json "><code class="language-json" data-lang="json">Example response:
-{
-    "address": "bc1q9muf0c092ag3arxxh9ctmx9gg2chd2wquz8u35",
-    "username": null,
-    "funded": false
-}
-</code></pre>
-<h4 id="get-v1-user-name-username"><code>GET v1/user/name/:username $</code></h4>
-<p>Returns information about the availability of a username. Authentication is required but any user can check the availability of every username.</p>
-<pre data-lang="json" class="language-json "><code class="language-json" data-lang="json">Example response:
-{
-    "username": "satoshi",
-    "available": false
-}
-</code></pre>
-<h4 id="post-v1-user"><code>POST v1/user</code></h4>
-<p>Creates a user by registering a Bitcoin address for signing and identification purposes. The address of the created account can't be changed.</p>
-<pre data-lang="json" class="language-json "><code class="language-json" data-lang="json">Example input:
-{
-    "address": "bc1q9muf0c092ag3arxxh9ctmx9gg2chd2wquz8u35",
-}
-
-Example response:
-{
-    "address": "bc1q9muf0c092ag3arxxh9ctmx9gg2chd2wquz8u35",
-    "username": null,
-    "funded": false
-}
-</code></pre>
-<h4 id="put-v1-user-address"><code>PUT v1/user/:address $</code></h4>
-<p>Updates a user's username if you can proof ownership of <code>:address</code>.</p>
-<pre data-lang="json" class="language-json "><code class="language-json" data-lang="json">Example input:
-{
-    "username": "nakamoto",
-}
-
-Example response:
-{
-    "address": "bc1q9muf0c092ag3arxxh9ctmx9gg2chd2wquz8u35",
-    "username": "nakamoto",
-    "funded": false
-}
-</code></pre>
-<h4 id="delete-v1-user-address"><code>DELETE v1/user/:address $</code></h4>
-<p>Deletes a user if you can proof ownership of <code>:address</code>.</p>
-<h3 id="tokens">Tokens</h3>
-<h4 id="get-v1-token-address"><code>GET v1/token/:address</code></h4>
-<p>Returns the current token of <code>:address</code>.</p>
-<pre data-lang="json" class="language-json "><code class="language-json" data-lang="json">Example response:
-{
-    "token": "eNAv1NlGG7inZEtQM9sXvl2D3sXwu1ueIIaLKgY7IDjndkD0tyG049LcnpJneuev"
-}
-</code></pre>
 
           </div>
           
