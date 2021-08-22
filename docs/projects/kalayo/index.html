@@ -70,7 +70,7 @@ Kai Wolfram | kalayo (Work in progress)
             </div>
           </div>
           <div class="content mt-2">
-            <p>Kalayo is an async webserver with a REST API for custodial Bitcoin banking whose cold wallet is managed by a multisig scheme. It allows customers to transact with other kalayo users free of charge, batch on-chain transactions with other users to save network fees and send and receive payments over the Lightning network without managing Lightning channels. It can also be used as a custodial coin mixer and liquidity provider for the Lightning network.</p>
+            <p>Kalayo is an async webserver with a REST API for custodial Bitcoin banking whose cold wallet is managed by a multisig scheme. It allows customers to transact with other kalayo users free of charge, batch on-chain transactions with other users to save network fees and send and receive payments over the Lightning network without managing channels. It can also be used as a custodial coin mixer and liquidity provider for the Lightning network.</p>
 <span id="continue-reading"></span>
 <h2 id="roadmap">Roadmap</h2>
 <p>This project is still work in progress. The following list shows the current implemented features and those that are soon to be worked on.</p>
@@ -97,7 +97,7 @@ Automated Lightning network channel management</li>
 <h2 id="privacy">Privacy</h2>
 <p>Kalayo doesn't know anything about its customers except their transactions and a Bitcoin address which is used for signing. User authentication is handled by signing tokens with said Bitcoin address, which means that losing its private key results in losing the control of your Kalayo account.</p>
 <h2 id="requirements">Requirements</h2>
-<p>Kalayo is developed with Rust 1.54.0, Bitcoin Core 0.21.0, MySQL and the up to date version of c-lightning. To run the servere you need to configure the <a href="https://github.com/KaiWitt/kalayo/blob/master/config.toml">config.toml</a>, with your desired settings.</p>
+<p>Kalayo is developed with Rust 1.54.0, Bitcoin Core 0.21.0, MySQL and the up to date version of c-lightning. To run the server you need to configure the <a href="https://github.com/KaiWitt/kalayo/blob/master/config.toml">config.toml</a> with your desired settings.</p>
 <h2 id="kalayo-http-api">Kalayo HTTP API</h2>
 <p>Current implemented API endpoints.
 Endpoints that are marked with <code>$</code> require user authentication by using the HTTP Basic Auth scheme. 
@@ -150,18 +150,6 @@ Example response:
 </code></pre>
 <h4 id="delete-v1-user-address"><code>DELETE v1/user/:address $</code></h4>
 <p>Deletes a user if you can proof ownership of <code>:address</code>.</p>
-<pre data-lang="json" class="language-json "><code class="language-json" data-lang="json">Example input:
-{
-    "username": "nakamoto",
-}
-
-Example response:
-{
-    "address": "bc1q9muf0c092ag3arxxh9ctmx9gg2chd2wquz8u35",
-    "username": "nakamoto",
-    "funded": false
-}
-</code></pre>
 <h3 id="tokens">Tokens</h3>
 <h4 id="get-v1-token-address"><code>GET v1/token/:address</code></h4>
 <p>Returns the current token of <code>:address</code>.</p>
