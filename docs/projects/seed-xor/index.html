@@ -28,7 +28,7 @@
 
   <title>
     
-Kai Wolfram | kalayo (Work in progress)
+Kai Wolfram | seed-xor
 
   </title>
 </head>
@@ -58,7 +58,7 @@ Kai Wolfram | kalayo (Work in progress)
       <div class="column is-8 is-offset-2">
         <article class="box">
           <h1 class="title">
-            kalayo (Work in progress)
+            seed-xor
           </h1>
           <p class="subtitle"></p>
           <div class="columns is-multiline is-gapless">
@@ -70,40 +70,39 @@ Kai Wolfram | kalayo (Work in progress)
             </div>
           </div>
           <div class="content mt-2">
-            <p>Kalayo is an async webserver with a REST API for custodial Bitcoin banking whose cold wallet is managed by a multisig scheme. It allows customers to transact with other kalayo users free of charge, batch on-chain transactions with other users to save network fees and send and receive payments over the Lightning network without managing channels. It can also be used as a custodial coin mixer and liquidity provider for the Lightning network.</p>
+            <p>Builds on top of <a href="https://github.com/rust-bitcoin/rust-bip39/">rust-bip39</a>
+and lets you XOR bip39 mnemonics as defined in <a href="https://github.com/Coldcard/firmware/blob/master/docs/seed-xor.md">Coldcards docs</a>.</p>
+<p>It is also possible to XOR mnemonics with differing numbers of words.
+For this the shorter one will be extended with 0s during the XOR calculation.</p>
 <span id="continue-reading"></span>
-<h2 id="roadmap">Roadmap</h2>
-<p>This project is still work in progress. The following list shows the current implemented features and those that are soon to be worked on.</p>
+<h2 id="example">Example</h2>
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">use seed_xor::Mnemonic;
+use std::str::FromStr;
+
+// Coldcard example: https://github.com/Coldcard/firmware/blob/master/docs/seed-xor.md
+let a_str = "romance wink lottery autumn shop bring dawn tongue range crater truth ability miss spice fitness easy legal release recall obey exchange recycle dragon room";
+let b_str = "lion misery divide hurry latin fluid camp advance illegal lab pyramid unaware eager fringe sick camera series noodle toy crowd jeans select depth lounge";
+let c_str = "vault nominee cradle silk own frown throw leg cactus recall talent worry gadget surface shy planet purpose coffee drip few seven term squeeze educate";
+let result_str = "silent toe meat possible chair blossom wait occur this worth option bag nurse find fish scene bench asthma bike wage world quit primary indoor";
+
+// Mnemonic is a wrapper for bip39::Mnemonic which implements the XOR operation `^`.
+// Mnemonics can also be created from entropy.
+let a = Mnemonic::from_str(a_str).unwrap();
+let b = Mnemonic::from_str(b_str).unwrap();
+let c = Mnemonic::from_str(c_str).unwrap();
+let result = Mnemonic::from_str(result_str).unwrap();
+
+assert_eq!(result, a ^ b ^ c);
+</code></pre>
+<h2 id="useful-resources">Useful resources</h2>
 <ul>
-<li><input disabled="" type="checkbox" checked=""/>
-User accounts.</li>
-<li><input disabled="" type="checkbox" checked=""/>
-User authentication via message signing with Bitcoin addresses.</li>
-<li><input disabled="" type="checkbox"/>
-Hot wallet which uses Bitcoin Core, and allows users to fund their accounts.</li>
-<li><input disabled="" type="checkbox"/>
-Send/receive within the Kalayo system aswell as on-chain with the option to batch transactions.</li>
-<li><input disabled="" type="checkbox"/>
-Federated cold wallet</li>
-<li><input disabled="" type="checkbox"/>
-Coin mixing feature which guarantees customers to receive unrelated UTXOs</li>
-<li><input disabled="" type="checkbox"/>
-Lightning network integration</li>
-<li><input disabled="" type="checkbox"/>
-Lightning network liquidity vendor</li>
-<li><input disabled="" type="checkbox"/>
-Automated Lightning network channel management</li>
+<li>Coldcard docs: https://github.com/Coldcard/firmware/blob/master/docs/seed-xor.md</li>
+<li>Easy bip39 mnemonic explanation: https://learnmeabitcoin.com/technical/mnemonic</li>
 </ul>
-<h2 id="rest-api">REST API</h2>
-<p>You can find the documentation of the current state of Kalayo's REST API in the <a href="https://github.com/KaiWitt/kalayo/tree/master/src/api">api module</a>.</p>
-<h2 id="privacy">Privacy</h2>
-<p>Kalayo doesn't know anything about its customers except their transactions and a Bitcoin address which is used for signing. User authentication is handled by signing tokens with said Bitcoin address, which means that losing its private key results in losing the control of your Kalayo account.</p>
-<h2 id="requirements">Requirements</h2>
-<p>Kalayo is developed with Rust 1.54.0, Bitcoin Core 0.21.0, MySQL and the up to date version of c-lightning. To run the server you need to configure the <a href="https://github.com/KaiWitt/kalayo/blob/master/config.toml">config.toml</a> with your desired settings.</p>
 
           </div>
           
-          <a class="has-text-danger-dark has-text-weight-semibold has-text-left-desktop" href='https:&#x2F;&#x2F;github.com&#x2F;KaiWitt&#x2F;kalayo'
+          <a class="has-text-danger-dark has-text-weight-semibold has-text-left-desktop" href='https:&#x2F;&#x2F;github.com&#x2F;KaiWitt&#x2F;seed-xor'
             target="_blank">
             Repository
             <span class="icon is-small">
@@ -111,6 +110,14 @@ Automated Lightning network channel management</li>
             </span>
           </a><br>
           
+          
+          <a class="has-text-danger-dark has-text-weight-semibold has-text-left-desktop" href='https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;seed-xor'
+            target="_blank">
+            Crates.io
+            <span class="icon is-small">
+              <i class="fas fa-arrow-right fa-xs"></i>
+            </span>
+          </a><br>
           
           
           <div class="column has-text-right-desktop">
@@ -137,51 +144,6 @@ Automated Lightning network channel management</li>
     </span>
   </a>
   
-  <a class="has-text-info-dark has-text-weight-semibold" href="https://www.kaiwolfram.com/tags/lightning/">
-    <span class="icon-text">
-      <span class="icon">
-        <i class="fas fa-tag"></i>
-      </span>
-      <span>lightning</span>
-    </span>
-  </a>
-  
-  <a class="has-text-info-dark has-text-weight-semibold" href="https://www.kaiwolfram.com/tags/mysql/">
-    <span class="icon-text">
-      <span class="icon">
-        <i class="fas fa-tag"></i>
-      </span>
-      <span>mysql</span>
-    </span>
-  </a>
-  
-  <a class="has-text-info-dark has-text-weight-semibold" href="https://www.kaiwolfram.com/tags/redis/">
-    <span class="icon-text">
-      <span class="icon">
-        <i class="fas fa-tag"></i>
-      </span>
-      <span>redis</span>
-    </span>
-  </a>
-  
-  <a class="has-text-info-dark has-text-weight-semibold" href="https://www.kaiwolfram.com/tags/api/">
-    <span class="icon-text">
-      <span class="icon">
-        <i class="fas fa-tag"></i>
-      </span>
-      <span>api</span>
-    </span>
-  </a>
-  
-  <a class="has-text-info-dark has-text-weight-semibold" href="https://www.kaiwolfram.com/tags/rest/">
-    <span class="icon-text">
-      <span class="icon">
-        <i class="fas fa-tag"></i>
-      </span>
-      <span>rest</span>
-    </span>
-  </a>
-  
 </p>
 
             
@@ -204,12 +166,21 @@ Automated Lightning network channel management</li>
         <nav class="level">
           <nav class="level-left">
             
+            <div class="level-item has-text-centered">
+              <a class="button is-black is-outlined is-rounded" href="https:&#x2F;&#x2F;www.kaiwolfram.com&#x2F;projects&#x2F;kalayo&#x2F;">
+                <span class="icon mr-2">
+                  <i class="fas fa-arrow-circle-left"></i>
+                </span>
+                kalayo (Work in progress)
+              </a>
+            </div>
+            
           </nav>
           <nav class="level-right">
             
             <div class="level-item has-text-centered">
-              <a class="button is-black is-outlined is-rounded" href="https:&#x2F;&#x2F;www.kaiwolfram.com&#x2F;projects&#x2F;seed-xor&#x2F;">
-                seed-xor
+              <a class="button is-black is-outlined is-rounded" href="https:&#x2F;&#x2F;www.kaiwolfram.com&#x2F;projects&#x2F;xpub-balance&#x2F;">
+                xpub-balance
                 <span class="icon ml-2">
                   <i class="fas fa-arrow-circle-right"></i>
                 </span>

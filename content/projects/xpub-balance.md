@@ -9,6 +9,7 @@ tags = ["rust", "bitcoin", "cli"]
 [extra]
 project = true
 repo = "https://github.com/KaiWitt/xpub-balance"
+crates = ""
 link = ""
 +++
 

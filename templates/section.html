@@ -45,8 +45,16 @@
               </span>
             </a><br>
             {% endif %}
+            {% if page.extra.crates %}
+            <a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.extra.crates }}' target="_blank">
+              Crates.io
+              <span class="icon is-small">
+                <i class="fas fa-arrow-right fa-xs"></i>
+              </span>
+            </a><br>
+            {% endif %}
             {% if page.extra.link %}
-            <a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.extra.link }}'>
+            <a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.extra.link }}' target="_blank">
               Project link
               <span class="icon is-small">
                 <i class="fas fa-arrow-right fa-xs"></i>

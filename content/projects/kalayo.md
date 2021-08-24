@@ -9,6 +9,7 @@ tags = ["rust", "bitcoin", "lightning", "mysql", "redis", "api", "rest"]
 [extra]
 project = true
 repo = "https://github.com/KaiWitt/kalayo"
+crates = ""
 link = ""
 +++
 

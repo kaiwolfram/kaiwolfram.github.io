@@ -9,6 +9,7 @@ tags = ["rust", "cli", "xml"]
 [extra]
 project = true
 repo = "https://github.com/KaiWitt/xml-attribute-diff"
+crates = ""
 link = ""
 +++
 
