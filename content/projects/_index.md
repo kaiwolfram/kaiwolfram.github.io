@@ -1,5 +1,5 @@
 +++
 title = "Projects"
 sort_by = "weight"
-paginate_by = 10
+paginate_by = 20
 +++

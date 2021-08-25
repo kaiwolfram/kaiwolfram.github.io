@@ -4,7 +4,7 @@ description = ""
 weight = 1
 
 [taxonomies]
-tags = ["rust", "bitcoin", "lightning", "mysql", "redis", "api", "rest"]
+tags = ["rust", "bitcoin", "lightning", "mysql", "redis", "warp", "api", "rest"]
 
 [extra]
 project = true
