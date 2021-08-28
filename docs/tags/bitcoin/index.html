@@ -219,6 +219,15 @@
     </span>
   </a>
   
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://www.kaiwolfram.com/tags/warp/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>warp</span>
+    </span>
+  </a>
+  
   <a class="has-text-info-dark has-text-weight-semibold" href="https://www.kaiwolfram.com/tags/api/">
     <span class="icon-text">
       <span class="icon">
@@ -260,10 +269,10 @@
             </div>
           </div>
           <div class="content mt-2">
-            <p>Builds on top of <a href="https://github.com/rust-bitcoin/rust-bip39/">rust-bip39</a>
-and lets you XOR bip39 mnemonics as defined in <a href="https://github.com/Coldcard/firmware/blob/master/docs/seed-xor.md">Coldcards docs</a>.</p>
+            <p>seed-xor builds on top of <a href="https://github.com/rust-bitcoin/rust-bip39/">rust-bip39</a>
+and lets you XOR bip39 mnemonics as described in <a href="https://github.com/Coldcard/firmware/blob/master/docs/seed-xor.md">Coldcards docs</a>.</p>
 <p>It is also possible to XOR mnemonics with differing numbers of words.
-For this the shorter one will be extended with 0s during the XOR calculation.</p>
+For this the shorter one will be extended with the longer one's surplus entropy.</p>
 
             
             <a class="has-text-danger-dark has-text-weight-semibold" href='https:&#x2F;&#x2F;github.com&#x2F;KaiWitt&#x2F;seed-xor' target="_blank">
