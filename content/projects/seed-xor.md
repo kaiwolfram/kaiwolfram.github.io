@@ -1,7 +1,7 @@
 +++
 title = "seed-xor"
 description = ""
-weight = 2
+weight = 3
 
 [taxonomies]
 tags = ["rust", "bitcoin"]
