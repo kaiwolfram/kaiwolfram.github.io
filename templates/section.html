@@ -37,30 +37,7 @@
           </div>
           <div class="content mt-2">
             {{ page.summary | safe }}
-            {% if page.extra.repo %}
-            <a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.extra.repo }}' target="_blank">
-              Repository
-              <span class="icon is-small">
-                <i class="fas fa-arrow-right fa-xs"></i>
-              </span>
-            </a><br>
-            {% endif %}
-            {% if page.extra.crates %}
-            <a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.extra.crates }}' target="_blank">
-              Crates.io
-              <span class="icon is-small">
-                <i class="fas fa-arrow-right fa-xs"></i>
-              </span>
-            </a><br>
-            {% endif %}
-            {% if page.extra.link %}
-            <a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.extra.link }}' target="_blank">
-              Project link
-              <span class="icon is-small">
-                <i class="fas fa-arrow-right fa-xs"></i>
-              </span>
-            </a><br>
-            {% endif %}
+            {{ macros:: show_links(page=page) }}
           </div>
           <div class="columns">
             <div class="column">
