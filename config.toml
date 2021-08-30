@@ -1,4 +1,4 @@
-baseURL = 'http://www.kaiwolfram.com/'
+baseURL = 'https://www.kaiwolfram.com/'
 languageCode = 'en-us'
 title = 'Kai Wolfram'
 
