@@ -1,39 +1,55 @@
-base_url = "https://www.kaiwolfram.com"
-title = "Kai Wolfram"
-default_language = "en"
-highlight_code = true
-generate_feed = true
-feed_filename = "rss.xml"
-taxonomies = [
-    { name = "tags", feed = true, paginate_by = 10 },
-]
-compile_sass = true
-build_search_index = false
-ignored_content = []
-extra_syntaxes = []
+baseURL = 'http://www.kaiwolfram.com/'
+languageCode = 'en-us'
+title = 'Kai Wolfram'
 
-[slugify]
-paths = "on"
-taxonomies = "on"
-anchors = "on"
+[params]
+colortheme = "classic" # dark, light, white, or classic
+description = "Software developer with an interest in Bitcoin, economics and freedom."
+copyright = "Kai Wolfram"
+rss = true
+tagsOverview = false
+tocInline = true
+showAllPostsOnHomePage = false
+postsOnHomePage = 5
+mainSectionTitle = "Posts"
+mainSection = "posts"
+showProjectsList = true
+projectsUrl = "https://github.com/KaiWitt"
+showOpensourceList = true
+opensourceUrl = "https://github.com/KaiWitt"
 
-[extra]
-navbar_items = [
-    { code = "en", nav_items = [
-        { url = "$BASE_URL", name = "Home" },
-        { url = "$BASE_URL/projects", name = "Projects" },
-        { url = "$BASE_URL/opensource", name = "Opensource" },
-        { url = "$BASE_URL/tags", name = "Tags" },
-    ] },
-]
+[[params.social]]
+  name = "github"
+  link = "https://github.com/KaiWitt"
+[[params.social]]
+  name = "keybase"
+  link = "https://keybase.io/kaiwitt"
+[[params.social]]
+  name = "email"
+  link = "kaiwitt@protonmail.com"
+[[params.social]]
+  name = "bitcoin"
+  link = "bc1qrhxputc6t45w8p2j8k7ke72a9zgqgt3q5gkgat"
 
-[extra.author]
-name = "Kai Wolfram"
-avatar = "/images/torro.jpg"
 
-[extra.social]
-github = "KaiWitt"
-keybase = "kaiwitt"
-email = "kaiwitt@protonmail.com"
-bitcoin = "bc1qrhxputc6t45w8p2j8k7ke72a9zgqgt3q5gkgat"
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "About me"
+url = "/about"
+weight = 3
 
+# Default code highlight
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
