@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Kai Wolfram'
 
 [params]
-colortheme = "classic" # dark, light, white, or classic
+colortheme = "kai" # dark, light, white, classic or kai
 description = "Software developer with an interest in Bitcoin, economics and freedom."
 copyright = "Kai Wolfram"
 rss = true
