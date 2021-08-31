@@ -4,7 +4,7 @@ title = 'Kai Wolfram'
 
 [params]
 colortheme = "kai" # dark, light, white, classic or kai
-description = "Software developer with an interest in Bitcoin, economics and freedom."
+description = "I'm a software developer with an interest in Bitcoin, economics and freedom."
 copyright = "Kai Wolfram"
 rss = true
 tagsOverview = false
