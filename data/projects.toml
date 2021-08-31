@@ -4,6 +4,11 @@ url = "https://github.com/KaiWitt/kalayo"
 desc = "Webserver with a REST API for custodial Bitcoin banking."
 
 [[list]]
+name = "seed-utils"
+url = "https://github.com/KaiWitt/seed-utils"
+desc = "CLI for bip39 mnemonic utilities."
+
+[[list]]
 name = "xyzpub"
 url = "https://github.com/KaiWitt/xyzpub"
 desc = "Convert xpubs and xprvs to different versions."
