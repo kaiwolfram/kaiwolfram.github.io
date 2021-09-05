@@ -5,7 +5,7 @@ desc = "Webserver with a REST API for custodial Bitcoin banking."
 
 [[list]]
 name = "uke-shift"
-url = "https://github.com/KaiWitt/uke-shift"
+url = "https://www.kaiwolfram.com/uke-shift/"
 desc = "Visualizer for Ukulele chord positions."
 
 [[list]]
