@@ -4,6 +4,11 @@ url = "https://github.com/KaiWitt/kalayo"
 desc = "Webserver with a REST API for custodial Bitcoin banking."
 
 [[list]]
+name = "uke-shift"
+url = "https://github.com/KaiWitt/uke-shift"
+desc = "Visualizer for Ukulele chord positions."
+
+[[list]]
 name = "seed-utils"
 url = "https://github.com/KaiWitt/seed-utils"
 desc = "CLI for bip39 mnemonic utilities."

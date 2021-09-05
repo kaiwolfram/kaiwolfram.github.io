@@ -21,8 +21,8 @@ date: 2021-08-30 16:00:00
 🇲🇽 Spanish (currently working towards proficiency)
 
 # Technology stack
-- Rust, Java
+- Rust, Java, TypeScript
 - MySQL, Elasticsearch, Redis, PostgreSQL, MongoDB
-- WebAssembly, GTK, HTML, CSS
+- WebAssembly, Svelte, HTML, CSS
 - Linux
 - Git, GitHub, VSCode, IntelliJ, Eclipse
