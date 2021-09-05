@@ -83,7 +83,6 @@
     {{ range .Site.Data.opensource.list }}
     <li class="project-item">
       <a href="{{ .url }}"><b>{{ .name }}</b></a>: {{ .desc | markdownify }}
-      <br>Contributions: {{ .contribution | markdownify }}
     </li>
     {{ end }}
   </ul>

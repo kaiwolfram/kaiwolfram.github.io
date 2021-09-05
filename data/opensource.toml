@@ -1,11 +1,9 @@
 [[list]]
-name = "Phoenix"
+name = "phoenix"
 url = "https://github.com/ACINQ/phoenix"
 desc = "Non custodial Bitcoin wallet using Lightning to send/receive payments."
-contribution = "German translation of the app."
 
 [[list]]
 name = "http-auth-basic"
 url = "https://github.com/EstebanBorai/http-auth-basic"
 desc = "A library for the HTTP Basic Auth schema."
-contribution = "Efficiency improvements, tests and standard trait implementation."

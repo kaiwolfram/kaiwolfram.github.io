@@ -1,7 +1,7 @@
 [[list]]
 name = "kalayo"
 url = "https://github.com/KaiWitt/kalayo"
-desc = "Webserver with a REST API for custodial Bitcoin banking."
+desc = "Webserver for custodial Bitcoin banking."
 
 [[list]]
 name = "uke-shift"
@@ -31,4 +31,4 @@ desc = "CLI for checking the cumulative balance of xpubs."
 [[list]]
 name = "xml-attribute-diff"
 url = "https://github.com/KaiWitt/xml-attribute-diff"
-desc = "CLI for comparing unique attribute values of xml files."
+desc = "CLI for comparing unique attribute values of XMLs."
