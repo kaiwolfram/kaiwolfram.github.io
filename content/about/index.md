@@ -12,15 +12,13 @@ date: 2021-08-30 16:00:00
 
 🌍 I'm currently living in Germany.
 
-# Spoken Languages
 
-🇩🇪 German (native)
+#### Spoken Languages:
+- 🇩🇪 German (native)
+- 🇺🇸 English (proficient)
+- 🇲🇽 Spanish (currently working towards proficiency)
 
-🇺🇸 English (proficient)
-
-🇲🇽 Spanish (currently working towards proficiency)
-
-# Technology stack
+#### Technology stack:
 - Rust, Java, TypeScript
 - MySQL, Elasticsearch, Redis, PostgreSQL, MongoDB
 - WebAssembly, Svelte, HTML, CSS
