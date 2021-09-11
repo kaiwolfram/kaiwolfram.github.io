@@ -1,3 +1,6 @@
+ ./hugo.exe server -D  
+ ./hugo.exe -D --destination docs
+
 Add this to add a blog: 
  
   <section id="writing">

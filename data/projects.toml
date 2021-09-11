@@ -9,6 +9,11 @@ url = "https://www.kaiwolfram.com/uke-shift/"
 desc = "Visualizer for Ukulele chord positions."
 
 [[list]]
+name = "senzu"
+url = "https://github.com/KaiWitt/senzu"
+desc = "Vanity address generator that uses your xpub to find addresses."
+
+[[list]]
 name = "seed-utils"
 url = "https://github.com/KaiWitt/seed-utils"
 desc = "CLI for bip39 mnemonic utilities."
