@@ -1,12 +1,7 @@
 [[list]]
-name = "kalayo"
-url = "https://github.com/KaiWitt/kalayo"
-desc = "Webserver for custodial Bitcoin banking."
-
-[[list]]
-name = "uke-shift"
-url = "https://www.kaiwolfram.com/uke-shift/"
-desc = "Visualizer for Ukulele chord positions."
+name = "seed-utils"
+url = "https://github.com/KaiWitt/seed-utils"
+desc = "CLI for bip39 mnemonic utilities."
 
 [[list]]
 name = "senzu"
@@ -14,26 +9,6 @@ url = "https://github.com/KaiWitt/senzu"
 desc = "Vanity address generator that uses your xpub to find addresses."
 
 [[list]]
-name = "seed-utils"
-url = "https://github.com/KaiWitt/seed-utils"
-desc = "CLI for bip39 mnemonic utilities."
-
-[[list]]
-name = "xyzpub"
-url = "https://github.com/KaiWitt/xyzpub"
-desc = "Convert xpubs and xprvs to different versions."
-
-[[list]]
-name = "seed-xor"
-url = "https://github.com/KaiWitt/seed-xor"
-desc = "XOR bip39 mnemonics."
-
-[[list]]
-name = "xpub-balance"
-url = "https://github.com/KaiWitt/xpub-balance"
-desc = "CLI for checking the cumulative balance of xpubs."
-
-[[list]]
-name = "xml-attribute-diff"
-url = "https://github.com/KaiWitt/xml-attribute-diff"
-desc = "CLI for comparing unique attribute values of XMLs."
+name = "uke-shift"
+url = "https://www.kaiwolfram.com/uke-shift/"
+desc = "Visualizer for ukulele chord positions."

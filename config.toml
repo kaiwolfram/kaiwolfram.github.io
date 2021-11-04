@@ -15,7 +15,7 @@ mainSectionTitle = "Posts"
 mainSection = "posts"
 showProjectsList = true
 projectsUrl = "https://github.com/KaiWitt"
-showOpensourceList = true
+showOpensourceList = false
 opensourceUrl = "https://github.com/KaiWitt"
 
 [[params.social]]
@@ -36,6 +36,10 @@ opensourceUrl = "https://github.com/KaiWitt"
 name = "Home"
 url = "/"
 weight = 1
+[[menu.main]]
+name = "Posts"
+url = "/posts"
+weight = 2
 [[menu.main]]
 name = "About me"
 url = "/about"
