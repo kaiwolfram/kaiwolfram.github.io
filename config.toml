@@ -19,6 +19,9 @@ showOpensourceList = false
 opensourceUrl = "https://github.com/KaiWitt"
 
 [[params.social]]
+  name = "twitter"
+  link = "https://twitter.com/kai_wolfram"
+[[params.social]]
   name = "github"
   link = "https://github.com/KaiWitt"
 [[params.social]]
@@ -26,7 +29,7 @@ opensourceUrl = "https://github.com/KaiWitt"
   link = "https://keybase.io/kaiwitt"
 [[params.social]]
   name = "email"
-  link = "kaiwitt@protonmail.com"
+  link = "kaiwolfram@protonmail.com"
 [[params.social]]
   name = "bitcoin"
   link = "bc1qrhxputc6t45w8p2j8k7ke72a9zgqgt3q5gkgat"
