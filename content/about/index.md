@@ -16,3 +16,5 @@ date: 2021-08-30 16:00:00
 
 #### Donations:
 - Bitcoin: [bc1qrhxputc6t45w8p2j8k7ke72a9zgqgt3q5gkgat](bitcoin:bc1qrhxputc6t45w8p2j8k7ke72a9zgqgt3q5gkgat)
+- PayNym: +oldfog6CB
+- Payment code: PM8TJMucXyemhPs8hVcouzyiAPQ199Hv1wtsyidTfcKtpfr12rdyWrmPzHJwjtdR2JfQLSpCBeodPFxw6k6zqFG9gGDmEK59cnAA4odAkgZuSQfThQJ7 

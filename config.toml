@@ -30,9 +30,6 @@ opensourceUrl = "https://github.com/KaiWitt"
 [[params.social]]
   name = "email"
   link = "kaiwolfram@protonmail.com"
-[[params.social]]
-  name = "bitcoin"
-  link = "bc1qrhxputc6t45w8p2j8k7ke72a9zgqgt3q5gkgat"
 
 
 [[menu.main]]
