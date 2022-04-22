@@ -41,6 +41,13 @@
   {{ partial "optional-about.html" . }}
 </section>
 
+{{ $showMainSection := false }}
+{{ if (isset .Site.Params "showMainSection") }}
+{{ $showMainSection = .Site.Params.showMainSection }}
+{{ else if .Site.Data.writing }}
+{{ $showMainSection = true }}
+{{ end }}
+{{ if $showMainSection }}
 <section id="writing">
   <span class="h1"><a href="{{ .Site.Params.mainSection | absURL }}">{{ .Site.Params.mainSectionTitle | default
       "Writings" }}</a></span>
@@ -96,6 +103,7 @@
   </ul>
   {{ end }}
 </section>
+{{ end }}
 
 {{ $showProjectsList := false }}
 {{ if (isset .Site.Params "showprojectslist") }}

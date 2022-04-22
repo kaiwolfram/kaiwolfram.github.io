@@ -11,9 +11,10 @@ tagsOverview = false
 tocInline = true
 showAllPostsOnHomePage = false
 postsOnHomePage = 5
+showMainSection = false
 mainSectionTitle = "Posts"
 mainSection = "posts"
-showProjectsList = true
+showProjectsList = false
 projectsUrl = "https://github.com/KaiWitt"
 showOpensourceList = false
 opensourceUrl = "https://github.com/KaiWitt"
@@ -36,10 +37,10 @@ opensourceUrl = "https://github.com/KaiWitt"
 name = "Home"
 url = "/"
 weight = 1
-[[menu.main]]
-name = "Posts"
-url = "/posts"
-weight = 2
+# [[menu.main]]
+# name = "Posts"
+# url = "/posts"
+# weight = 2
 [[menu.main]]
 name = "About"
 url = "/about"
