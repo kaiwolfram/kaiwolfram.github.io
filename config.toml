@@ -26,11 +26,8 @@ opensourceUrl = "https://github.com/KaiWitt"
   name = "github"
   link = "https://github.com/KaiWitt"
 [[params.social]]
-  name = "keybase"
-  link = "https://keybase.io/kaiwitt"
-[[params.social]]
   name = "email"
-  link = "kaiwolfram@protonmail.com"
+  link = "kaiwolfram@proton.me"
 
 
 [[menu.main]]

@@ -4,7 +4,7 @@ date: 2021-08-30 16:00:00
 ---
 
 
-✉️ You can check out my [GitHub](https://github.com/KaiWitt) account to see what I'm up to and contact me via Twitter [@kai_wolfram](https://twitter.com/kai_wolfram), [Keybase](https://keybase.io/kaiwitt) or [email](mailto:kaiwolfram@protonmail.com).
+✉️ You can check out my [GitHub](https://github.com/KaiWitt) account to see what I'm up to and contact me via Twitter [@kai_wolfram](https://twitter.com/kai_wolfram) or [email](mailto:kaiwolfram@proton.me).
 
 🌍 I'm currently living in Germany.
 
