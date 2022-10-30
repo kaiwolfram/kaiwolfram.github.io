@@ -1,4 +1,0 @@
-[[list]]
-name = "phoenix"
-url = "https://github.com/ACINQ/phoenix"
-desc = "Non custodial Bitcoin wallet using Lightning to send/receive payments."
