@@ -5,9 +5,7 @@
     "relays": {
         "c1a8cf318c6a1a0f27da4e202215cc1cfefe7f37b5b8d110552087b89328574a": [
             "wss://nostr.einundzwanzig.space",
-            "wss://nostr-pub.wellorder.net",
-            "wss://nos.lol",
-            "wss://nostr.d11n.net"
+            "wss://nostr-pub.wellorder.net"
         ]
     }
 }
